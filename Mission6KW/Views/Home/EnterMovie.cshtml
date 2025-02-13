@@ -1,0 +1,67 @@
+@model Mission6KW.Models.Movie
+
+<h2>Add a New Movie</h2>
+
+@if (ViewBag.SuccessMessage != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.SuccessMessage
+    </div>
+}
+
+<form asp-action="EnterMovie" method="post" onsubmit="clearForm()">
+    <div class="form-group">
+        <label>Title</label>
+        <input asp-for="Title" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label>Category</label>
+        <input asp-for="Category" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label>Director</label>
+        <input asp-for="Director" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label>Year</label>
+        <input asp-for="Year" type="number" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label>Rating</label>
+        <select asp-for="Rating" class="form-control">
+            <option>G</option>
+            <option>PG</option>
+            <option>PG-13</option>
+            <option>R</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Edited</label>
+        <input asp-for="Edited" type="checkbox">
+    </div>
+
+    <div class="form-group">
+        <label>Lent To</label>
+        <input asp-for="LentTo" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Notes</label>
+        <input asp-for="Notes" class="form-control" maxlength="25">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+<script>
+    function clearForm() {
+        setTimeout(() => {
+            document.querySelector("form").reset();
+        }, 100); // Delay clearing to allow submission to process
+    }
+</script>
