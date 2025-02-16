@@ -1,30 +1,53 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding for proper text rendering -->
     <meta charset="utf-8"/>
+
+    <!-- Responsive design settings for mobile compatibility -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Dynamic title that changes based on the page content -->
     <title>@ViewData["Title"] - Mission6KW</title>
+
+    <!-- Link to Bootstrap CSS for styling -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+
+    <!-- Link to site-wide custom CSS styles -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+
+    <!-- Link to project-specific styles -->
     <link rel="stylesheet" href="~/Mission6KW.styles.css" asp-append-version="true"/>
 </head>
 <body>
+
 <header>
+    <!-- Navigation bar with Bootstrap styling -->
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container-fluid">
+            <!-- Brand logo linking to the home page -->
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Mission6KW</a>
+
+            <!-- Responsive menu button for mobile view -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Navigation menu -->
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
+                    <!-- Link to the home page -->
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
+
+                    <!-- Link to the "Get to Know Joel" page -->
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="GetToKnowJoel">Get to Know Joel</a>
                     </li>
+
+                    <!-- Link to the movie entry page -->
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="EnterMovie">Add Movie</a>
                     </li>
@@ -33,20 +56,30 @@
         </div>
     </nav>
 </header>
+
+<!-- Main content container -->
 <div class="container">
     <main role="main" class="pb-3">
-        @RenderBody()
+        @RenderBody() <!-- Placeholder for the main content of each page -->
     </main>
 </div>
 
+<!-- Footer section -->
 <footer class="border-top footer text-muted">
     <div class="container">
         &copy; 2025 - Mission6KW
     </div>
 </footer>
+
+<!-- JavaScript libraries for Bootstrap functionality -->
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Link to custom site-wide JavaScript file -->
 <script src="~/js/site.js" asp-append-version="true"></script>
+
+<!-- Additional scripts section for specific pages (optional) -->
 @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

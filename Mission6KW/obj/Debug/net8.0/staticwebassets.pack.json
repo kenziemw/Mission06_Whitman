@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets/img/JoelHiltonHeadshot.jpg"
     },
     {
+      "Id": "/Users/Shared/Mission6KW/Mission6KW/wwwroot/img/group.jpeg",
+      "PackagePath": "staticwebassets/img/group.jpeg"
+    },
+    {
       "Id": "/Users/Shared/Mission6KW/Mission6KW/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

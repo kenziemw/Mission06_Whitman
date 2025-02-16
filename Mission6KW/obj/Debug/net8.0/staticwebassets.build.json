@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/P87P7HZw1DHDDBgdCH3X8plsWDM2GkoLxY70aWbrPA=",
+  "Hash": "10plsZ2p9Er5STFL2xQqrN1ZlXAGOf7ibRbybwX2kEs=",
   "Source": "Mission6KW",
   "BasePath": "_content/Mission6KW",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/Shared/Mission6KW/Mission6KW/wwwroot/img/group.jpeg",
+      "SourceId": "Mission6KW",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Shared/Mission6KW/Mission6KW/wwwroot/",
+      "BasePath": "_content/Mission6KW",
+      "RelativePath": "img/group.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/group.jpeg"
     },
     {
       "Identity": "/Users/Shared/Mission6KW/Mission6KW/wwwroot/img/JoelHiltonHeadshot.jpg",
